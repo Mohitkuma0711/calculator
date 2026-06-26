@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "app",
+    "app/VoiceDropWebAppUI",
     "server",
     "infra"
   ],
   "scripts": {
+    "dev": "npm run start:web",
     "start:server": "npm run dev --workspace=server",
+    "start:app": "npm run start:web",
+    "start:web": "npm run dev --workspace=@voicedrop/web",
+    "build:web": "npm run build --workspace=@voicedrop/web",
     "start:app:android": "npm run android --workspace=app",
     "start:app:ios": "npm run ios --workspace=app"
   }

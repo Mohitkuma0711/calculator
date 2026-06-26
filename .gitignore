@@ -1,6 +1,7 @@
 # Dependency directories
 node_modules/
 app/node_modules/
+app/VoiceDropWebAppUI/node_modules/
 server/node_modules/
 
 # Mac OS
@@ -15,6 +16,7 @@ server/node_modules/
 
 # Build output
 server/dist/
+app/VoiceDropWebAppUI/dist/
 app/android/app/build/
 app/ios/build/
 
